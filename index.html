@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhi | Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Abhi, a CS student building full-stack apps with Spring Boot and React.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a href="#top" class="logo">Abhi</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1 class="hero-title">
+      <span class="line"><span>I build full-stack</span></span>
+      <span class="line"><span>apps that people</span></span>
+      <span class="line"><span class="gold">actually use.</span></span>
+    </h1>
+    <p class="hero-sub">Hi, I'm Abhi. A BTech CS student in India, working with Spring Boot on the backend and React on the frontend.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="about wrap">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <p>I'm a computer science student who learns by shipping. I pick a project, break it, fix it, and repeat until it works. Right now I'm going deep on Java and Spring Boot for APIs, and React for interfaces that feel quick.</p>
+      <div class="edu">
+        <img src="logo.png" alt="Atharva University crest" width="180" height="120">
+        <div>
+          <h3>BTech, Computer Science</h3>
+          <p>Atharva University, Mumbai</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="wrap"><h2>Skills</h2></div>
+    <div class="marquee"><div class="track">
+      <span>Java</span><span>Spring Boot</span><span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>REST APIs</span><span>MySQL</span><span>Git</span><span>GSAP</span>
+      <span>Java</span><span>Spring Boot</span><span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>REST APIs</span><span>MySQL</span><span>Git</span><span>GSAP</span>
+    </div></div>
+    <div class="wrap skill-groups">
+      <div><h3>Backend</h3><p>Java, Spring Boot, REST APIs, MySQL</p></div>
+      <div><h3>Frontend</h3><p>React, JavaScript, HTML, CSS, GSAP</p></div>
+      <div><h3>Tools</h3><p>Git, GitHub, VS Code, Postman</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="pin">
+      <h2 class="wrap">Projects</h2>
+      <div class="rail">
+        <article class="card">
+          <h3>Notes App</h3>
+          <p>A React notes app with create, edit, search and delete. Built while learning hooks and state.</p>
+          <p class="stack">React, JavaScript, CSS</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+        </article>
+        <article class="card">
+          <h3>Student API</h3>
+          <p>A Spring Boot REST API with CRUD endpoints, validation and a MySQL database.</p>
+          <p class="stack">Java, Spring Boot, MySQL</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+        </article>
+        <article class="card">
+          <h3>Full-Stack Project</h3>
+          <p>Replace this with your best project: what it does, who it's for, and what you learned.</p>
+          <p class="stack">React, Spring Boot</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact wrap">
+    <h2>Let's build something.</h2>
+    <p>Open to internships, freelance work and good conversations about code.</p>
+    <a class="btn big" href="mailto:youremail@example.com">youremail@example.com</a>
+    <div class="social">
+      <a href="https://github.com/your-username">GitHub</a>
+      <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer>&copy; 2026 Abhi</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

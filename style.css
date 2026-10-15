@@ -1,0 +1,62 @@
+:root{--navy:#0c1a34;--navy2:#13264a;--maroon:#7a1519;--gold:#e8c547;--ink:#f4efe3;--mute:#a9b3c7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{background:var(--navy);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;line-height:1.6;font-size:1.05rem;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05}
+a{color:inherit;text-decoration:none}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer,.nav{position:relative;z-index:1}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem;z-index:10;backdrop-filter:blur(10px);background:rgba(12,26,52,.55)}
+.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.4rem;color:var(--gold)}
+.nav nav{display:flex;gap:1.6rem}
+.nav nav a{color:var(--mute);transition:color .2s}
+.nav nav a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:7rem 2rem 4rem;max-width:1100px;margin:0 auto}
+.hero-title{font-size:clamp(2.8rem,8.5vw,7rem);font-weight:800;letter-spacing:-.03em}
+.line{display:block;overflow:hidden;padding-bottom:.08em}
+.line span{display:inline-block}
+.gold{color:var(--gold)}
+.hero-sub{max-width:34rem;margin:1.8rem 0 2rem;color:var(--mute)}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.85rem 1.6rem;background:var(--gold);color:var(--navy);font-weight:500;border-radius:999px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--mute)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn.big{font-size:1.2rem;padding:1.1rem 2rem}
+h2{font-size:clamp(2rem,5vw,3.6rem);font-weight:800;margin-bottom:2rem;letter-spacing:-.02em}
+.about,.contact{padding:7rem 1.5rem}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center}
+.about-grid>p{font-size:1.25rem;color:var(--ink)}
+.edu{background:#fff;color:#111;border-radius:1.2rem;padding:1.2rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.6rem}
+.edu img{width:100%;max-width:260px;height:auto}
+.edu h3{font-size:1.15rem}
+.edu p{color:#444;font-size:.95rem}
+.skills{padding:4rem 0}
+.marquee{overflow:hidden;border-block:1px solid rgba(232,197,71,.3);padding:1.4rem 0;margin-bottom:3rem}
+.track{display:flex;gap:3rem;width:max-content;animation:scroll 28s linear infinite}
+.track span{font-family:'Bricolage Grotesque';font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:transparent;-webkit-text-stroke:1px var(--gold);white-space:nowrap}
+.track span:nth-child(3n){color:var(--gold)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.skill-groups h3{color:var(--gold);margin-bottom:.4rem;font-size:1.4rem}
+.skill-groups p{color:var(--mute)}
+.projects{padding:5rem 0}
+.pin{overflow:hidden}
+.rail{display:flex;gap:2rem;padding:0 2rem;width:max-content}
+.card{width:min(80vw,420px);min-height:320px;padding:2rem;border-radius:1.2rem;background:linear-gradient(160deg,var(--navy2),#0e2040);border:1px solid rgba(232,197,71,.25);display:flex;flex-direction:column;gap:.8rem;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--gold)}
+.card h3{font-size:1.8rem}
+.card p{color:var(--mute)}
+.card .stack{color:var(--gold);font-size:.95rem}
+.links{margin-top:auto;display:flex;gap:1.2rem}
+.links a{border-bottom:1px solid var(--gold);padding-bottom:2px}
+.contact{text-align:center;min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem}
+.contact p{color:var(--mute)}
+.social{display:flex;gap:1.6rem;margin-top:1rem}
+.social a{color:var(--gold);border-bottom:1px solid transparent}
+.social a:hover{border-color:var(--gold)}
+footer{text-align:center;padding:2rem;color:var(--mute);font-size:.9rem}
+@media(max-width:760px){.about-grid,.skill-groups{grid-template-columns:1fr}.nav nav{gap:1rem;font-size:.9rem}.nav{padding:1rem}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}}
